@@ -4,6 +4,9 @@ require_once("connect.php");
 #echo "O nome informado foi: " .$_POST['nome'];
 
 
+session_start();
+   $img=(isset($_SESSION['imagem']) && !empty($_SESSION['imagem']))?$_SESSION['imagem']:"img/avatar-none.png";
+   
 
 global $conn;
 
@@ -23,11 +26,12 @@ if ($_POST){
     $razao = (isset($_POST['razao'])) ? $razao = $_POST['razao'] :"";
     $experiencia = (isset($_POST['experiencia'])) ? $experiencia = $_POST['experiencia'] :"";
     $expectativa = (isset($_POST['expectativa'])) ? $expectativa = $_POST['expectativa'] :"";
-    $urlFoto = (isset($_POST['urlFoto'])) ? $urlFoto = $_POST['urlFoto'] :"";
+   // $urlFoto = (isset($_POST['urlFoto'])) ? $urlFoto = $_POST['urlFoto'] :"";
+   $urlFoto = $img;
 
     
 echo "CPF".$cpf."<br>", "nome".$nome."<br>","e-mail".$email."<br>", "Telefone".$telefone."<br>", "Nascimento" .$nascimento."<br>","endereço: ".$endereco."<br>", "bairro".$bairro."<br>";
-echo "escolaridade".$escolaridade."<br>", "estuda".$estuda."<br>", "instituição".$instituicao."<br>", "curso".$curso."<br>", "motivo".$motivo."<br>", "razao".$razao."<br>", "exepriência".$experiencia."<br>", "expectativa".$expectativa."<br>", "urlFoto".$urlFoto;
+echo "escolaridade".$escolaridade."<br>", "estuda".$estuda."<br>", "instituição".$instituicao."<br>", "curso".$curso."<br>", "motivo".$motivo."<br>", "razao".$razao."<br>", "exepriência".$experiencia."<br>", "expectativa".$expectativa."<br>", "<br> urlFoto".$urlFoto."</br>";
 
 }else{
     return;}
