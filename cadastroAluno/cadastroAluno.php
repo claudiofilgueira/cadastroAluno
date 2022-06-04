@@ -51,7 +51,7 @@ session_start();
             </div>
             <div class="form-row ">
                 <div class="col">
-                    <label for="nome" class="">Nome do candango</label>
+                    <label for="nome" class="">Nome</label>
                     <input type="text" id="nome" class="form-control" placeholder="Nome Completo" minlength="15" name="nome">
                 </div>
             </div>
@@ -103,8 +103,8 @@ session_start();
                     <label for="instituicao" class="">Estuda em outra instituição atualmente</label>
                     <select id="instituicao" class="form-control" name="estuda">
                         <option value="escolha" selected>Escolha uma opção</option>
-                        <option value="sim">Sim</option>
-                        <option value="nao">Não</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Nao">Não</option>
                       </select>
                 </div>
             </div>  
@@ -140,7 +140,7 @@ session_start();
             </div>           
             <div class="form-row ">   
                 <div class="col">
-                    <label for="expectativas" class="">Qual são suas expectativas após a conclusão do curso?</label>
+                    <label for="expectativas" class="">Quais são suas expectativas após a conclusão do curso?</label>
                     <textarea id="expectativas" class="form-control" placeholder="Informe a sua expectativa" name="expectativa"></textarea>
                 </div>
             </div>                                                                         

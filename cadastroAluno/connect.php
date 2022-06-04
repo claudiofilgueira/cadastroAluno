@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$database = "cadalunos";
-$username = "root";
-$password = "";
+$database = "cadaluno";
+$username = "claudiofil";
+$password = "D4m}N9\SCEeH2mji";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
 // Check connection

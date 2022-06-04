@@ -42,7 +42,8 @@ function gravar($conn, $cpf, $nome, $email, $telefone, $nascimento, $endereco, $
 
     if(mysqli_query($conn, $sql)){
 
-        echo "Cadastro efetuado com sucesso!";
+        header("Location: cadastroSucesso.html");
+        echo "urlFoto".$urlFoto;
     }else{
         echo "deu ruim " .$sql . "<br>" . mysqli_error($conn);
     }
